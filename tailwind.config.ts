@@ -26,8 +26,4 @@ export default <Partial<Config>>{
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [require('@tailwindcss/forms')],
 };

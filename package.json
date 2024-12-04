@@ -1,13 +1,13 @@
 {
-  "name": "personal-nuxt-template",
-  "description": "My personal template for nuxt projects",
+  "name": "weaving-jeans",
+  "description": "Small tool to show, why a jeans is brighter on the inside",
   "author": "EliasSchaut",
   "private": true,
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EliasSchaut/NuxtTemplate.git"
+    "url": "https://github.com/EliasSchaut/WeavingJeans.git"
   },
   "scripts": {
     "start": "node .output/server/index.mjs",
@@ -31,7 +31,6 @@
     "@nuxtjs/i18n": "^9.1.0",
     "@nuxtjs/sitemap": "^6.1.5",
     "@nuxtjs/tailwindcss": "^6.12.2",
-    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@pinia/nuxt": "^0.8.0",
     "@tailwindcss/forms": "^0.5.9",
     "autoprefixer": "^10.4.20",

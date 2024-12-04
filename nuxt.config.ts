@@ -16,8 +16,8 @@ export default defineNuxtConfig({
   ],
 
   site: {
-    url: 'https://schaut.dev',
-    name: 'Elias Schaut',
+    url: 'https://jeans.schaut.dev',
+    name: 'WeavingJeans',
   },
 
   fonts: {
@@ -82,12 +82,6 @@ export default defineNuxtConfig({
 
   pinia: {
     autoImports: ['defineStore'],
-  },
-
-  piniaPersistedstate: {
-    cookieOptions: {
-      maxAge: 60 * 60 * 24 * 30,
-    },
   },
 
 })

@@ -1,8 +1,7 @@
 export const settingsStore = defineStore('settings', {
   state: (): SettingsType => {
-    const theme = useColorMode();
     return {
-      theme: (theme.preference as SettingsType['theme']) || 'system',
+      theme: 'dark',
     };
   },
   actions: {
@@ -11,7 +10,6 @@ export const settingsStore = defineStore('settings', {
       useColorMode().preference = theme;
     },
   },
-  persist: true,
 });
 
 class SettingsType {
