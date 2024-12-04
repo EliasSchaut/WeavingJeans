@@ -1,10 +1,10 @@
 <template>
-  <Title>Elias Schaut</Title>
+  <Title>Weben einer Jeans</Title>
   <Meta
       name="description"
-      content="Elias Schaut"
+      content="Weben einer Jeans"
   />
-  <Meta name="keywords" content="elias" />
+  <Meta name="keywords" content="jeans" />
   <Meta name="theme-color" content="#111827" />
   <Link
       rel="apple-touch-icon"

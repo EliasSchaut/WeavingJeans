@@ -3,7 +3,7 @@
     type="checkbox"
     @click="flip"
     :class="[
-      'h-8 w-8 appearance-none border-2 z-1 border-second-600 hover:cursor-pointer',
+      'h-8 w-8 appearance-none border-2 rounded-0 z-1 border-second-600 hover:cursor-pointer',
       checked ? 'bg-blue-800' : 'bg-white'
     ]"
   />

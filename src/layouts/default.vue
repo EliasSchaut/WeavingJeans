@@ -4,7 +4,7 @@
   />
   <div class="flex flex-col h-screen justify-between">
     <LayoutNav />
-      <main class="mb-auto bg-[url('/img/jeans.png')] bg-contain bg-no-repeat bg-center">
+      <main class="mb-auto bg-[url('/img/jeans.png')] bg-contain bg-center">
         <slot />
       </main>
     <LayoutFooter />

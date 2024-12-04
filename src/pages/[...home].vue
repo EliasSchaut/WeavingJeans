@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-10 my-20 flex flex-col items-center justify-center">
-    <form class="inline-grid grid-cols-8">
+  <div class="mx-4 my-20 flex flex-col items-center justify-center">
+    <form class="inline-grid grid-cols-9">
       <ButtonSquare v-for="i in button_count" :key="i" :ref="el => button_refs.push(el)" />
     </form>
     <button @click="flip" class="flex justify-center gap-x-2 m-5 w-48 p-2 bg-prime-500 text-white rounded-lg">
@@ -23,7 +23,7 @@ export default defineComponent({
   },
   setup() {
     return {
-      button_count: 80,
+      button_count: 90,
       button_refs: ref([]),
       settings: settingsStore(),
     }
