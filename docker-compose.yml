@@ -2,6 +2,8 @@
 services:
   weavingjeans:
     container_name: weavingjeans
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "${PORT:-3000}:80"
