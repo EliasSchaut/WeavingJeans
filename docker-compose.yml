@@ -1,0 +1,7 @@
+
+services:
+  weavingjeans:
+    container_name: weavingjeans
+    build: .
+    ports:
+      - "${PORT:-3000}:80"

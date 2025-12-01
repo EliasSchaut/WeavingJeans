@@ -1,0 +1,6 @@
+name: weavingjeans
+reference: main
+profiles:
+  - prod
+external_secrets:
+  PORT: c1718f70-5758-4192-8e45-10993496acb9:prod:PORT
