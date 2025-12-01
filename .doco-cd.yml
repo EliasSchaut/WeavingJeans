@@ -5,7 +5,7 @@ build_opts:
   no_cache: true
   quiet: false
   args:
-    --build
+    build
 profiles:
   - prod
 external_secrets:
