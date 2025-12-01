@@ -1,11 +1,11 @@
 name: weavingjeans
 reference: main
+compose_files:
+  - docker-compose.yml
 build_opts:
   force_image_pull: true
   no_cache: true
   quiet: false
-  args:
-    build
 profiles:
   - prod
 external_secrets:
