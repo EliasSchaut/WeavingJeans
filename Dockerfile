@@ -26,6 +26,7 @@ COPY --from=build /app/.output/ ./
 # Change the port and host
 ENV PORT=80
 ENV HOST=0.0.0.0
+ENV NODE_ENV=production
 
 EXPOSE $PORT
 
