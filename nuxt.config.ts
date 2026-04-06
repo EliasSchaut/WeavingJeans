@@ -5,12 +5,9 @@ export default defineNuxtConfig({
   srcDir: './src',
   compatibilityDate: '2024-11-01',
   modules: [
-    '@nuxtjs/i18n',
     '@nuxt/fonts',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxtjs/sitemap',
-    '@nuxt/image',
     '@pinia/nuxt',
   ],
 
@@ -30,35 +27,6 @@ export default defineNuxtConfig({
         provider: 'local',
       },
     ],
-  },
-
-  i18n: {
-    langDir: 'locales',
-    restructureDir: false,
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-        isCatchallLocale: true,
-        file: 'en-US.json',
-      },
-      {
-        code: 'de',
-        iso: 'de-DE',
-        name: 'Deutsch',
-        file: 'de-DE.json',
-      },
-    ],
-    defaultLocale: 'en',
-    strategy: 'no_prefix',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      fallbackLocale: 'en',
-    },
-    lazy: true,
   },
 
   colorMode: {

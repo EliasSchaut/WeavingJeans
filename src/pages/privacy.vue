@@ -1,23 +1,23 @@
 <template>
   <div class="mx-4 my-10 flex flex-row justify-center">
     <Card
-      :title="$t('privacy.title')"
+      title="Datenschutzerklärung"
       :icon="ClipboardDocumentCheckIcon"
       class="w-full align-middle lg:w-2/3"
     >
       <Faq
         :faqs="[
           {
-            question: $t('privacy.data.title'),
-            answer: $t('privacy.data.body'),
+            question: 'Welche Daten werden von dieser Website erfasst?',
+            answer: 'Diese Website erfasst keine Daten von dir. Der im Impressum angegebene Betreiber erfährt nur von dir, wenn du ihm eine E-Mail schreibst. Dadurch erfährt der Betreiber deine E-Mail-Adresse und deinen Namen. Diese Daten werden nur für die Beantwortung deiner Anfrage verwendet und nicht an Dritte weitergegeben.',
           },
           {
-            question: $t('privacy.cookies.title'),
-            answer: $t('privacy.cookies.body'),
+            question: 'Analytics/Cookies/Externe-Ressourcen u.ä.?',
+            answer: 'Diese Website verwendet kein analytisches Tracking jeglicher Art. Diese Website verwendet Cookies. Das sind kleine Textdateien, die der Webbrowser auf dem Endgerät speichert. Cookies helfen dabei, das Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Einige Cookies sind “Session-Cookies.” Solche Cookies werden nach Ende der Browser-Sitzung von selbst gelöscht. Hingegen bleiben andere Cookies auf Ihrem Endgerät bestehen, bis diese händisch selbst gelöscht werden. Solche Cookies helfen bei Rückkehr auf die Website gemachte Einstellungen wiederzuverwenden. Mit einem modernen Webbrowser kann das Setzen von Cookies überwacht, einschränkt oder unterbunden werden. Viele Webbrowser lassen sich so konfigurieren, dass Cookies mit dem Schließen des Programms von selbst gelöscht werden. Die Deaktivierung von Cookies kann eine eingeschränkte Funktionalität der Website zur Folge haben.',
           },
           {
-            question: $t('privacy.rights.title'),
-            answer: $t('privacy.rights.body'),
+            question: 'Was sind meine Rechte?',
+            answer: 'Nach DSGVO und BDSG kannst du jederzeit Auskunft, Aktualisierung, Sperrung oder Löschung aller deiner Daten verlangen. Dein Ansprechpartner hierfür ist der oben genannte Betreiber dieser Webseite. Außerdem bin ich verpflichtet, dich an dein Recht zu erinnern, dieser Zustimmung jederzeit zu widersprechen und dich ggf. bei einer Aufsichtsbehörde über mich zu beschweren.',
           },
         ]"
       />
@@ -35,26 +35,7 @@ export default defineComponent({
     ClipboardDocumentCheckIcon,
   },
   data() {
-    return {
-      faqs: [
-        {
-          question: this.$t('privacy.registration.title'),
-          answer: this.$t('privacy.registration.body'),
-        },
-        {
-          question: this.$t('privacy.access.title'),
-          answer: this.$t('privacy.access.body'),
-        },
-        {
-          question: this.$t('privacy.cookies.title'),
-          answer: this.$t('privacy.cookies.body'),
-        },
-        {
-          question: this.$t('privacy.rights.title'),
-          answer: this.$t('privacy.rights.body'),
-        },
-      ],
-    };
+    return {};
   },
 });
 </script>

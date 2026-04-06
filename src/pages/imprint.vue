@@ -1,16 +1,16 @@
 <template>
   <div class="mx-4 my-10 flex flex-row justify-center">
     <Card
-      :title="$t('imprint.title')"
+      title="Impressum"
       :icon="IdentificationIcon"
       class="w-full align-middle sm:w-1/2"
     >
-      <p>{{ $t('imprint.declaration') }}</p>
+      <p>Angaben gemäß § 5 TMG</p>
       <p>{{ impressum.name }}</p>
 
       <p>
-        <b>{{ $t('imprint.contact') }}:</b><br />
-        {{ $t('imprint.email') }}: {{ impressum.email }}<br />
+        <b>Kontakt:</b><br />
+        E-Mail: {{ impressum.email }}<br />
       </p>
     </Card>
   </div>

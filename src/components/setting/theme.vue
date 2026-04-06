@@ -2,17 +2,17 @@
   <Dropdown
     :items="[
       {
-        label: $t('common.theme.light'),
+        label: 'Hell',
         callback: () => settings.setTheme('light'),
         icon: SunIcon,
       },
       {
-        label: $t('common.theme.dark'),
+        label: 'Dunkel',
         callback: () => settings.setTheme('dark'),
         icon: MoonIcon,
       },
       {
-        label: $t('common.theme.system'),
+        label: 'System',
         callback: () => settings.setTheme('system'),
         icon: ComputerDesktopIcon,
       },

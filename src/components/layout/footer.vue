@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
       <nav
         class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
-        :aria-label="$t('footer.title')"
+        aria-label="Footer"
       >
         <div v-for="link in links" :key="link.title" class="pb-6">
           <nuxt-link
@@ -34,21 +34,19 @@
 <script lang="ts">
 export default defineComponent({
   setup() {
-    const { t } = useI18n();
-
     return {
       links: [
         {
-          title: t('footer.home'),
+          title: 'Startseite',
           href: '/',
           intern: true,
         },
         {
-          title: t('footer.source'),
+          title: 'Quellcode',
           href: 'https://github.com/EliasSchaut/WeavingJeans',
         },
-        { title: t('footer.imprint'), href: '/imprint', intern: true },
-        { title: t('footer.privacy'), href: '/privacy', intern: true },
+        { title: 'Impressum', href: '/imprint', intern: true },
+        { title: 'Datenschutz', href: '/privacy', intern: true },
       ] as Array<{ title: string; href: string; intern?: boolean }>,
     };
   },

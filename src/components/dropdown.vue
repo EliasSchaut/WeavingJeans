@@ -53,7 +53,7 @@ import { ChevronDownIcon } from '@heroicons/vue/24/outline';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
 
 export default defineComponent({
-  name: 'SettingLang',
+  name: 'Dropdown',
   components: {
     Menu,
     MenuButton,
